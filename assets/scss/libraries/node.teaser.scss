@@ -1,0 +1,59 @@
+@import "../boot";
+
+.node--view-mode-teaser {
+  margin-bottom: 2.25rem;
+
+  .field--name-body {
+    font-size: 0.85rem;
+    color: $gray-800;
+  }
+
+  &.node--type-video .field--name-field-remote-video img,
+  &.node--type-news .field--name-field-image img {
+    border-radius: $border-radius-sm;
+  }
+
+  // Person
+  &.node--type-person {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .field--name-field-image {
+      padding-right: 1rem;
+
+      img.image-style-portrait {
+        border-radius: $border-radius;
+        min-width: 80px;
+        min-height: 80px;
+      }
+    }
+
+    .node-body {
+      flex: 1;
+    }
+  }
+
+  // Contest Player
+  &.node--type-player {
+    margin-bottom: 3rem;
+  }
+}
+
+.node-title-md {
+  font-size: 1.1rem;
+  font-weight: $headings-font-weight;
+  margin: 0.5rem 0;
+
+  a {
+    color: $black;
+  }
+
+  a:hover {
+    color: $link-color;
+  }
+}
+
+.node-title-lg {
+  font-size: 1.5rem;
+}

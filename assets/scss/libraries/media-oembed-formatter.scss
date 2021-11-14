@@ -1,0 +1,11 @@
+@import "../boot";
+
+.media-oembed-content {
+  width: 100%;
+  max-width: 100%;
+  min-height: 320px;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 460px;
+  }
+}

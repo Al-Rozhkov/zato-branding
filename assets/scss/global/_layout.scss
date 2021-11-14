@@ -1,0 +1,68 @@
+// Single container class with breakpoint max-widths
+.container,
+// 100% wide container at all breakpoints
+.container-fluid {
+	@include make-container();
+	max-width: map-get($container-max-widths, "xl");
+}
+
+// Rows contain your columns.
+.row {
+	@include make-row();
+}
+
+// Remove the negative margin from default .row, then the horizontal padding
+// from all immediate children columns (to prevent runaway style inheritance).
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+
+	> .col,
+	> [class*="col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+// Common properties for all breakpoints
+%grid-column {
+	position: relative;
+	width: 100%;
+	padding-right: $grid-gutter-width * 0.5;
+	padding-left: $grid-gutter-width * 0.5;
+}
+
+.col,
+.col-auto {
+	@extend %grid-column;
+}
+
+.col-auto {
+	@include make-col-auto();
+}
+
+// Page Layout
+#main-wrapper {
+	position: relative;
+}
+
+.main-content {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+}
+
+.view-frontpage {
+	margin-bottom: 3rem;
+}
+
+.site-footer {
+	border-top: 1px solid $gray-300;
+	padding: 2.5rem 0;
+	margin-top: 30px;
+}
+
+// Pane decoration
+.block {
+	position: relative;
+}

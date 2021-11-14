@@ -1,0 +1,45 @@
+@import "../boot";
+
+.contest {
+  position: relative;
+  padding: 2rem 3rem;
+  background: rgba($white, 0.75);
+  border-radius: $border-radius;
+  height: 100%;
+}
+
+.contest-1::before {
+  content: " ";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: -2rem;
+  right: 0;
+  bottom: -2rem;
+  left: -2rem;
+  border-radius: 1.5rem;
+  filter: blur(40px);
+  background-image: radial-gradient(at 71% 77%, #f07 0, transparent 21%),
+    radial-gradient(at 99% 2%, #fff 0, transparent 0), radial-gradient(at 45% 98%, #7b26c9 0, transparent 51%),
+    radial-gradient(at 36% 47%, #ee9890 0, transparent 50%), radial-gradient(at 6% 21%, #f07 0, transparent 28%),
+    radial-gradient(at 45% 51%, #ff0080 0, transparent 53%), radial-gradient(at 73% 44%, #7d28cc 0, transparent 54%),
+    radial-gradient(at 24% 7%, #7d28cc 0, transparent 40%), radial-gradient(at 76% 46%, #6b66ff 0, transparent 50%);
+}
+
+.contest-2::before {
+  content: " ";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: -2rem;
+  right: 0;
+  bottom: -2rem;
+  left: -2rem;
+  border-radius: 1.5rem;
+  filter: blur(40px);
+  background-image: radial-gradient(at 71% 77%, $orange 0, transparent 21%),
+    radial-gradient(at 99% 2%, #fff 0, transparent 0), radial-gradient(at 45% 98%, $teal 0, transparent 51%),
+    radial-gradient(at 36% 47%, #eebd90 0, transparent 50%), radial-gradient(at 6% 21%, $yellow 0, transparent 28%),
+    radial-gradient(at 45% 51%, $orange 0, transparent 53%), radial-gradient(at 73% 44%, $teal 0, transparent 54%),
+    radial-gradient(at 24% 7%, $teal 0, transparent 40%), radial-gradient(at 76% 46%, $green 0, transparent 50%);
+}

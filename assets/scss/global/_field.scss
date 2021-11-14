@@ -1,0 +1,30 @@
+.field--label-inline {
+  display: flex;
+  flex-wrap: wrap;
+
+  .field__label {
+    margin-right: 0.4rem;
+  }
+
+  .field__items {
+    flex: 1;
+  }
+}
+
+.field__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.2rem;
+
+  .field__item {
+    margin: 0 0.2rem 0.4rem;
+  }
+}
+
+//
+// by field name
+//
+.field--name-field-city {
+  margin-bottom: 1rem;
+  color: mix($orange, $black, 25%);
+}

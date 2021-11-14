@@ -1,0 +1,31 @@
+blockquote {
+	font-style: italic;
+	margin: 0 0 1.5rem;
+	padding: .75rem 1rem .25rem 2rem;
+	font-size: 1.2rem;
+	border-left: 4px solid #eeeeee;
+}
+
+h2.block-title {
+	margin-bottom: 1.5rem;
+}
+
+h2.node-title {
+  font-size: 1.5rem;
+}
+
+h3.node-title {
+  font-size: 1.1rem;
+}
+
+@include media-breakpoint-up(md) {
+	h1.page-title {
+		font-size: 3rem;
+		// margin-bottom: 3rem;
+	}
+}
+
+// Utilities
+.text-danger {
+	color: $red;
+}

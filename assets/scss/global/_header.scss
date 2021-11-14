@@ -1,0 +1,84 @@
+#header {
+  margin-bottom: 2rem;
+}
+
+#site-branding {
+  font-weight: 700;
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 175px;
+
+  @media (min-width: 1380px) {
+    margin-left: -56px;
+  }
+}
+
+#logo {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+#navbar-top {
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  ul.nav .nav-item .nav-link {
+    &.active {
+      border-radius: $border-radius-sm;
+      background-color: $gray-200;
+    }
+  }
+}
+
+#navbar-main {
+  position: relative;
+  color: $white;
+  background-color: #025ea1;
+  font-size: 0.85rem;
+  padding: 0.25rem 1rem;
+
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+
+  ul.nav .nav-item .nav-link {
+    &.active {
+      border-radius: $border-radius-sm;
+      @include gradient-directional(#025ea1, $blue, 30deg);
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-image: url(@/assets/images/bg-sky.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// ==================================================
+
+//
+// Search
+// --------------------------------------------------
+.navbar-search a {
+  display: inline-block;
+  text-align: right;
+  padding: 0.5rem;
+}
+.navbar-search a:hover {
+  opacity: .7;
+}
+
+/* .ya-page_js_yes .ya-site-form_inited_no {
+  display: none;
+}
+
+#ya-site-form0 .ya-site-form__form .ya-site-form__submit_type_image {
+  background-image: url(../images/search-icon.svg);
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+} */

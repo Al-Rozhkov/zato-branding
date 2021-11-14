@@ -1,0 +1,31 @@
+@import "../boot";
+@import "../../../node_modules/bootstrap/scss/forms";
+
+.user-login-form,
+.form-item-gorod {
+  max-width: 36rem;
+}
+
+.form-item-age {
+  max-width: 24rem;
+}
+
+// @todo workaround dirty hack
+#edit-comment-body-0-format-help-about {
+  display: none;
+}
+
+/**
+ * @file
+ * Visual styles for table drag.
+ */
+
+ tr.drag {
+  background-color: #fffff0;
+}
+tr.drag-previous {
+  background-color: #ffd;
+}
+body div.tabledrag-changed-warning {
+  margin-bottom: 0.5em;
+}

@@ -1,0 +1,111 @@
+@import "../boot";
+
+@include media-breakpoint-up(md) {
+  .row-cols-md-4 {
+    @include row-cols(4);
+  }
+
+  .row-cols-md-5 {
+    @include row-cols(5);
+  }
+}
+
+// Disable animation if transitions are disabled
+@if $enable-transitions {
+  @keyframes progress-bar-stripes {
+    from {
+      background-position: $progress-height 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+}
+
+.graph-item-rows {
+  margin-bottom: 0.25rem;
+  padding-right: 8rem;
+}
+
+.progress {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $progress-bg;
+  @include box-shadow($progress-box-shadow);
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: $progress-height;
+  overflow: hidden;
+  color: $progress-bar-color;
+  text-align: right;
+  white-space: nowrap;
+  background-color: $progress-bar-bg;
+  @include border-radius($progress-border-radius);
+  @include transition($progress-bar-transition);
+
+  &:after {
+    content: " ";
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 0.4rem;
+    border-radius: 0.3rem;
+    background-color: $white;
+    display: inline-block;
+  }
+}
+
+.column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.column-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 0.4rem 0.4rem 0 0;
+  color: $progress-bar-color;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.label-in {
+  font-weight: 700;
+}
+
+.label-out {
+  display: inline-block;
+  width: 0;
+  overflow: visible;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  // line-height: ;
+}
+
+.progress-bar-striped {
+  @include gradient-striped();
+  background-size: $progress-height $progress-height;
+}
+
+@if $enable-transitions {
+  .progress-bar-animated {
+    animation: progress-bar-stripes $progress-bar-animation-timing;
+
+    @if $enable-reduced-motion {
+      @media (prefers-reduced-motion: reduce) {
+        animation: none;
+      }
+    }
+  }
+}

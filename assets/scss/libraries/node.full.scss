@@ -1,0 +1,78 @@
+@import "../boot";
+
+.node--unpublished {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "Не опубликовано";
+    color: $white;
+    background-color: $red;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.8rem;
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius-sm;
+    opacity: 0.75;
+  }
+}
+
+//
+// View mode Full
+//
+.node--view-mode-full {
+  margin-bottom: 3rem;
+
+  .field--name-body {
+    max-width: 860px;
+    font-size: 1.1rem;
+  }
+
+  &.node--type-news {
+    .field--name-field-image,
+    .field--name-field-remote-image {
+      margin-bottom: 2rem;
+    }
+
+    .field--name-body {
+      max-width: 660px;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.node__meta {
+  display: flex;
+  align-items: flex-start;
+
+  .field--name-user-picture {
+    padding-right: 1rem;
+  }
+}
+
+.submitted {
+  display: block;
+  font-size: 0.8rem;
+  color: desaturate(darken($orange, 35%), 25%);
+  opacity: 0.9;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  flex: 1;
+
+  .submitted-date {
+    margin-right: 1rem;
+  }
+}
+
+.node__tags {
+  font-size: 1.25rem;
+  padding: 2rem 0 1rem;
+
+  .badge {
+    font-weight: $font-weight-base;
+    padding: 0.25em 0.5em;
+    background-color: $gray-200;
+  }
+}
