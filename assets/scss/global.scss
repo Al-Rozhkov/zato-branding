@@ -23,7 +23,7 @@
 // @import "../node_modules/bootstrap/scss/input-group";
 // @import "../node_modules/bootstrap/scss/custom-forms";
 @import "@/node_modules/bootstrap/scss/nav";
-@import "@/node_modules/bootstrap/scss/navbar";
+// @import "@/node_modules/bootstrap/scss/navbar";
 // @import "../node_modules/bootstrap/scss/card";
 // @import "../node_modules/bootstrap/scss/breadcrumb";
 // @import "../node_modules/bootstrap/scss/pagination";
@@ -121,9 +121,9 @@ $utilities: (
 // Custom styles
 //
 @import "global/type";
-@import "global/layout";
-@import "global/header";
+// @import "global/layout";
+// @import "global/header";
 @import "global/lists";
-@import "global/field";
+@import "global/sidebar";
 @import "global/icons";
 @import "global/icons_social";

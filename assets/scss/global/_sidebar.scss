@@ -1,0 +1,60 @@
+.sidebar {
+  padding: 1rem 0;
+  height: 100%;
+  z-index: 30;
+  overflow: auto;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.sidebar__sticky {
+  padding: 0 1.5rem;
+  overflow-y: auto;
+  height: auto;
+  max-height: 100vh;
+}
+
+// .sidebar__menu {}
+
+.menu {
+  list-style-type: none;
+  margin: 0 0 1rem;
+  padding: 0;
+
+  .nuxt-link-active {
+    color: $black;
+    background: lighten($color: $yellow, $amount: 25%);
+    border-radius: $border-radius-sm;
+  }
+}
+
+.menu-link,
+.menu-group {
+  display: block;
+  padding: 0.25rem 1rem;
+}
+
+.menu-group {
+  margin-bottom: 0.5rem;
+  color: $gray-600;
+  font-weight: $font-weight-bold;
+  font-size: 0.85rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .sidebar.hidden {
+    display: block;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .sidebar {
+    overflow: visible;
+  }
+  
+  .sidebar__sticky {
+    position: sticky;
+    top: 0;
+  }
+}

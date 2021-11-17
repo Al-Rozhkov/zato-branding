@@ -42,27 +42,3 @@
 }
 
 // Page Layout
-#main-wrapper {
-	position: relative;
-}
-
-.main-content {
-	flex-basis: 0;
-	flex-grow: 1;
-	max-width: 100%;
-}
-
-.view-frontpage {
-	margin-bottom: 3rem;
-}
-
-.site-footer {
-	border-top: 1px solid $gray-300;
-	padding: 2.5rem 0;
-	margin-top: 30px;
-}
-
-// Pane decoration
-.block {
-	position: relative;
-}
