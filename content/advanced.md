@@ -15,21 +15,6 @@ category: Начало
 
 </alert>
 
-```js
-export default {
-  modules: [,
-    '@nuxt/content'
-  ],
-  generate: {
-    async ready () {
-      const { $content } = require('@nuxt/content')
-      const files = await $content().only(['slug']).fetch()
-      console.log(files)
-    }
-  }
-}
-```
-
 ### Статическая генерация сайта
 
 Начиная с версии 2.14+, `nuxt generate` имеет интегрированный обходчик, который будет автоматически обходить все ваши ссылки и генерировать маршруты основываясь на них. Поэтому вам не нужно ничего делать для сканирования ваших динамических маршрутов.
@@ -41,22 +26,6 @@ export default {
 При использовании Nuxt <= 2.12 `nuxt generate`, вам нужно указать динамические маршруты в [generate.routes](https://nuxtjs.org/api/configuration-generate/#routes), потому что Nuxt не знает какие маршруты нужно генерировать.
 
 **Пример**
-
-```js
-export default {
-  modules: [,
-    '@nuxt/content'
-  ],
-  generate: {
-    async routes () {
-      const { $content } = require('@nuxt/content')
-      const files = await $content().only(['path']).fetch()
-
-      return files.map(file => file.path === '/index' ? '/' : file.path)
-    }
-  }
-}
-```
 
 <alert type="warning">
 
@@ -85,23 +54,6 @@ export default {
 
 > `text` это контент markdown файла перед тем, как он будет преобразован в JSON AST, вы можете использовать его на этом этапе, но он не возвращается API.
 
-```js
-export default {
-  modules: [,
-    '@nuxt/content'
-  ],
-  hooks: {
-    'content:file:beforeInsert': (document) => {
-      if (document.extension === '.md') {
-        const { time } = require('reading-time')(document.text)
-
-        document.readingTime = time
-      }
-    }
-  }
-}
-```
-
 ## Обработка горячей перезагрузки
 
 <alert type="info">
@@ -111,20 +63,6 @@ export default {
 </alert>
 
 В случае, если вам нужно слушать событие, чтобы выполнить что-то еще, вам нужно слушать событие `content:update` на стороне клиента, используя `$nuxt.$on('content:update')`:
-
-```js{}[plugins/update.client.js
-export default function ({ store }) {
-  // Только в режиме разработки
-  if (process.dev) {
-    window.onNuxtReady(($nuxt) => {
-      $nuxt.$on('content:update', ({ event, path }) => {
-        // Обновить категории в сторе
-        store.dispatch('fetchCategories')
-      })
-    })
-  }
-}
-```
 
 Затем добавьте ваш плагин в `nuxt.config.js`:
 
@@ -140,7 +78,6 @@ export default {
 Эта документация использует его и вы можете узнать больше, взглянув на[plugins/categories.js](https://github.com/nuxt/content/blob/master/docs/plugins/categories.js).
 
 ## API
-
 
 Этот модуль предоставляет API в разработке, поэтому вы можете легко увидеть JSON каждого каталога или файла, доступные на [http://localhost:3000/_content/](http://localhost:3000/_content/). Префикс `_content` установлен по умолчанию и может быть изменен в параметре  [apiPrefix](/configuration#apiprefix).
 

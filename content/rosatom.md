@@ -1,15 +1,11 @@
 ---
-title: Написание контента
-description: 'Научитесь писать в директории content/, поддерживаются Markdown, YAML, CSV и JSON.'
-position: 3
-category: Начало
-multiselectOptions:
-  - VuePress
-  - Gridsome
-  - Nuxt
+title: Фирменный стиль «Росатома»
+description: 'Фирменный стиль «Росатома» как основа стиля Ассоциации ЗАТО атомной промышленности.'
+position: 2
+category: Руководство
 ---
 
-Для начала, создайте директорию `content/` в вашем проекте:
+Фирменный стиль Ассоциации ЗАТО атомной промышленности создан на основе (фирменного стиля Госкорпорации «Росатом»)[https://www.rosatom.ru/journalist/style/] и следует концепции единого бренда «Росатома».
 
 Этот модуль будет обрабатывать файлы  `.md`, `.yaml`, `.csv`, `.json`, `.json5` и генерировать следующие свойства:
 
@@ -51,14 +47,6 @@ multiselectOptions:
 Этот модуль автоматически добавит `id` и `link` к каждому заголовку.
 
 Представим, что у нас есть такой файл:
-
-```md[home.md]
-# Lorem ipsum
-## dolor—sit—amet
-### consectetur &amp; adipisicing
-#### elit
-##### elit
-```
 
 Это будет преобразовано в древовидную JSON AST структуру и использовано компонентом `nuxt-content` и в итоге получится вот такой HTML:
 
@@ -129,51 +117,20 @@ multiselectOptions:
 
 2. Вы не можете использовать самозакрывающиеся теги, потому что **это не будет работать**:
 
-```html
-<my-component/>
-```
-
-А **это будет**:
-
-```html
-<my-component></my-component>
-```
-
 **Примеры:**
 
 Мы определили компонент [ExampleMultiselect.vue](https://github.com/nuxt/content/blob/master/docs/components/global/examples/ExampleMultiselect.vue):
-
-```md[home.md]
-Выберите *фреймворк*:
-
-<example-multiselect :options="['Vue', 'React', 'Angular', 'Svelte']"></example-multiselect>
-```
 
 **Результат:**
 
 <div class="border rounded p-2 mb-2 bg-gray-200 dark:bg-gray-800">
 Выберите <i>фреймворк</i>:
 
-<example-multiselect :options="['Vue', 'React', 'Angular', 'Svelte']"></example-multiselect>
-
 </div>
 
 Также вы можете задать параметры:
 
-```md[home.md]
----
-multiselectOptions:
-  - VuePress
-  - Gridsome
-  - Nuxt
----
-
-<example-multiselect :options="multiselectOptions"></example-multiselect>
-```
-
 <div class="border rounded-md p-2 mb-2 bg-gray-200 dark:bg-gray-800">
-
-<example-multiselect :options="multiselectOptions"></example-multiselect>
 
 </div>
 

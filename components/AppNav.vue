@@ -1,7 +1,8 @@
 <template>
   <aside class="sidebar" :class="{ hidden: !menu }">
     <div class="sidebar__sticky">
-      
+      <AppLogo class="logo" />
+
       <ul class="menu">
         <li
           v-for="(docs, category) in categories"
@@ -67,4 +68,24 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.logo {
+  display: block;
+  height: 3.5rem;
+  margin-bottom: 1rem;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .sidebar__sticky {
+    padding-left: 3.5rem;
+  }
+  .logo {
+    margin-bottom: 2rem;
+    margin-left: -2.5rem;
+  }
+}
 </style>

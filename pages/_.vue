@@ -2,7 +2,7 @@
   <div class="page">
     <AppToc v-if="!document.fullscreen" :toc="document.toc" class="toc" />
 
-    <div>
+    <div class="page__content">
       <article>
         <h1 class="page-title">
           {{ document.title }}
@@ -80,9 +80,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.page {
-  display: grid;
-  gap: $spacer;
-  grid-template-columns: 1fr 4fr;
+@include media-breakpoint-up(lg) {
+  .page {
+    display: grid;
+    gap: $spacer;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .page__content {
+    grid-column: 2 / 3;
+  }
 }
 </style>
