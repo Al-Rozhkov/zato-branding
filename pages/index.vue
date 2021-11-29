@@ -1,13 +1,17 @@
 <template>
-  <div class="page-body">
-    <p>
-      Empower your NuxtJS application with @nuxt/content module: write in a
-      content/ directory and fetch your Markdown, JSON, YAML and CSV files
-      through a MongoDB like API, acting as a Git-based Headless CMS.
-    </p>
+  <div class="center-inner">
+    <nuxt-img src="/logo_circle.png" width="600" height="600" />
   </div>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style lang="scss" scoped>
+.center-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

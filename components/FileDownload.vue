@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="file-download">
     <UilFileDownload />
-    <slot />
+    <div><slot /></div>
   </div>
 </template>
 
@@ -14,3 +14,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.file-download {
+  display: flex;
+}
+</style>
