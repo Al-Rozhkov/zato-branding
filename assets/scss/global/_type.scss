@@ -6,22 +6,15 @@ blockquote {
 	border-left: 4px solid #eeeeee;
 }
 
-h2.block-title {
-	margin-bottom: 1.5rem;
-}
-
-h2.node-title {
-  font-size: 1.5rem;
-}
-
-h3.node-title {
-  font-size: 1.1rem;
+h1.page-title {
+	font-size: 2.5rem;
+	margin: 1rem $spacer 2rem;
 }
 
 @include media-breakpoint-up(md) {
 	h1.page-title {
-		font-size: 3rem;
-		// margin-bottom: 3rem;
+		font-size: 3.5rem;
+		margin: 2rem $spacer 2rem;
 	}
 }
 

@@ -16,8 +16,7 @@
         <NuxtContent :document="document" />
       </article>
 
-      <AppPageBottom :document="document" />
-      <AppPrevNext :prev="prev" :next="next" />
+      <!-- <AppPrevNext :prev="prev" :next="next" /> -->
     </div>
   </div>
 </template>

@@ -1,7 +1,8 @@
 <template>
-  <aside class="sidebar" :class="{ hidden: !menu }">
+  <!-- <aside class="sidebar" :class="{ hidden: !menu }"> -->
+  <aside class="sidebar">
     <div class="sidebar__sticky">
-      <AppLogo class="logo" />
+      <AppLogo2 class="logo" />
 
       <ul class="menu">
         <li

@@ -41,4 +41,28 @@
 	@include make-col-auto();
 }
 
+//
 // Page Layout
+//
+.nuxt-content-highlight {
+  margin-bottom: 2rem;
+}
+
+.nuxt-content-container {
+	padding: 0 $spacer;
+
+	h2 {
+		margin: 2.5rem 0 1rem;
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: 0 $spacer * -1;
+		border-radius: $border-radius-sm;
+	}
+
+	p {
+		max-width: 44rem;
+	}
+}

@@ -38,6 +38,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -56,4 +57,27 @@ export default {
   styleResources: {
     scss: './assets/scss/_boot.scss',
   },
+
+  image: {
+    dir: 'assets/images',
+    provider: 'static',
+    presets: {
+      preview: {
+        modifiers: {
+          format: 'jpg',
+          fit: 'cover',
+          width: 800,
+          height: 800
+        }
+      },
+      thumb: {
+        modifiers: {
+          format: 'jpg',
+          fit: 'cover',
+          width: 360,
+          height: 360
+        }
+      }
+    }
+  }
 }

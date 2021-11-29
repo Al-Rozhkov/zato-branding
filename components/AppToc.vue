@@ -22,17 +22,12 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-
 export default {
   props: {
     toc: {
       type: Array,
       default: () => [],
     },
-  },
-  computed: {
-    ...mapGetters(['settings']),
   },
 }
 </script>
