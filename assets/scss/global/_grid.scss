@@ -1,0 +1,45 @@
+.grid-12 {
+  display: grid;
+  grid-gap: $spacer * 2;
+  gap: $spacer * 2;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}
+
+.span-6 {
+  grid-column: span 6;
+}
+
+.span-8 {
+  grid-column: span 8;
+}
+
+.span-9 {
+  grid-column: span 9;
+}
+
+.span-12 {
+  grid-column: span 12;
+}
+
+@include media-breakpoint-up(md) {
+  .grid-12 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .grid-12 {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

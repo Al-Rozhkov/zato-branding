@@ -52,14 +52,30 @@
 	padding: 0 $spacer 2rem;
 
 	h2 {
-		margin: 2.5rem 0 1rem;
+		margin: 2.5rem 1rem 1rem 0;
 	}
 
-	img {
-		max-width: 100%;
-		height: auto;
-		margin: 0 $spacer * -1 1.5rem;
+	& > figure {
+		margin-left: $spacer * -1;
+		margin-bottom: 1.5rem;
+	}
+	
+	figure {
+		display: inline-block;
+		padding: 0.25rem;
+		border: 1px solid $gray-200;
 		border-radius: $border-radius-sm;
+
+		img {
+			max-width: 100%;
+			height: auto;
+			border-radius: $border-radius-sm;
+		}
+
+		figcaption {
+			padding: 0.5rem;
+			color: $gray-800;
+		}
 	}
 
 	p {
@@ -73,7 +89,7 @@
 }
 .contest-1::before {
 	content: " ";
-	opacity: .5;
+	opacity: 0.5;
 	z-index: -1;
 	position: absolute;
 	width: 100%;
