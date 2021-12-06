@@ -4,6 +4,7 @@ menuTitle: Полиграфия
 description: 'Полиграфические макеты в векторном формате.'
 position: 10
 category: Готовые шаблоны
+image: head_media_print.jpg
 ---
 
 ## Бланк официального письма

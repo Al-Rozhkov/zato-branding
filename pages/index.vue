@@ -1,17 +1,18 @@
 <template>
   <div class="center-inner">
-    <nuxt-img src="/logo_circle.png" width="600" height="600" />
+    <nuxt-img src="/intro.jpg" class="img-fluid"></nuxt-img>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
 
 <style lang="scss" scoped>
 .center-inner {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
+
+  img {
+    max-height: 90vh;
+  }
 }
 </style>

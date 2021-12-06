@@ -14,7 +14,7 @@
             {{ category }}
           </p>
           <ul class="menu">
-            <li v-for="doc of docs" :key="doc.slug" class="menu-item">
+            <li v-for="doc in docs" :key="doc.slug" class="menu-item">
               <NuxtLink
                 :to="doc.path"
                 class="menu-link"
@@ -41,7 +41,7 @@ export default {
 
   async fetch() {
     this.docs = await this.$content('/', { deep: true })
-      .only(['title', 'menuTitle', 'category', 'slug', 'version', 'to'])
+      .only(['title', 'menuTitle', 'category', 'slug', 'version', 'path'])
       .sortBy('position', 'asc')
       .fetch()
   },

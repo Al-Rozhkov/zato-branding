@@ -1,6 +1,6 @@
 <template>
   <div class="file-download">
-    <UilFileDownload />
+    <UilFileDownload size="1.75rem" class="mr-1" />
     <div><slot /></div>
   </div>
 </template>
@@ -18,5 +18,8 @@ export default {
 <style lang="scss" scoped>
 .file-download {
   display: flex;
+  align-items: center;
+  color: $blue;
+  margin-bottom: 2rem;
 }
 </style>

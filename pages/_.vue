@@ -3,6 +3,8 @@
     <AppToc v-if="!document.fullscreen" :toc="document.toc" class="toc" />
 
     <div class="page__content">
+      <nuxt-img v-if="document.image" :src="document.image" class="img-fluid" />
+
       <article>
         <h1 class="page-title">
           {{ document.title }}
