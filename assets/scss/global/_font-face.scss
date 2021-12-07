@@ -37,3 +37,30 @@
        url('~assets/fonts/raleway-v22-latin_cyrillic-italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('~assets/fonts/raleway-v22-latin_cyrillic-italic.svg#Raleway') format('svg'); /* Legacy iOS */
 }
+
+/* Rosatom */
+@font-face {
+	font-family: 'RosatomWebBold';
+	src: url('~/assets/fonts/rosatom/Rosatom-Bold_W.eot');
+	src:
+	     url('~assets/fonts/rosatom/Rosatom-Bold_W.eot?#iefix') format('embedded-opentype'),
+	     url('~assets/fonts/rosatom/Rosatom-Bold_W.woff2') format('woff2'),
+	     url('~assets/fonts/rosatom/Rosatom-Bold_W.woff') format('woff'),
+	     url('~assets/fonts/rosatom/Rosatom-Bold_W.ttf') format('truetype'),
+	     url('~assets/fonts/rosatom/Rosatom-Bold_W.svg#RosatomWeb-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RosatomWebRegular';
+	src: url('~assets/fonts/rosatom/Rosatom-Regular_W.eot');
+	src:
+	     url('~assets/fonts/rosatom/Rosatom-Regular_W.eot?#iefix') format('embedded-opentype'),
+	     url('~assets/fonts/rosatom/Rosatom-Regular_W.woff2') format('woff2'),
+	     url('~assets/fonts/rosatom/Rosatom-Regular_W.woff') format('woff'),
+	     url('~assets/fonts/rosatom/Rosatom-Regular_W.ttf') format('truetype'),
+	     url('~assets/fonts/rosatom/Rosatom-Regular_W.svg#RosatomWeb-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
