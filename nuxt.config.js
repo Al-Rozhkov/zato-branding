@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Руководство по айдентике Ассоциации ЗАТО атомной промышленности',
+    title: 'Руководство по использованию фирменного стиля Ассоциации ЗАТО атомной промышленности',
     htmlAttrs: {
       lang: 'ru'
     },

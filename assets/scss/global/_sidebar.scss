@@ -1,5 +1,5 @@
 .sidebar {
-  padding: 1rem 0;
+  padding: 0;
   height: 100%;
   z-index: 30;
   overflow: auto;
@@ -10,7 +10,7 @@
 }
 
 .sidebar__sticky {
-  padding: 0 1rem 0 1.5rem;
+  padding: 1rem 1rem 0 1.5rem;
   overflow-y: auto;
   height: auto;
   max-height: 100vh;

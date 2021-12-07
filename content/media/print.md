@@ -2,7 +2,7 @@
 title: Полиграфия
 menuTitle: Полиграфия
 description: 'Полиграфические макеты в векторном формате.'
-position: 10
+position: 8
 category: Готовые шаблоны
 image: head_media_print.jpg
 ---

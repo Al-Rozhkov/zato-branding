@@ -15,7 +15,7 @@
           </p>
         </div>
 
-        <NuxtContent :document="document" />
+        <NuxtContent class="page-content" :document="document" />
       </article>
 
       <!-- <AppPrevNext :prev="prev" :next="next" /> -->

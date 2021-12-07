@@ -44,11 +44,8 @@
 //
 // Page Layout
 //
-.nuxt-content-highlight {
+.page-content {
 	margin-bottom: 2rem;
-}
-
-.nuxt-content-container {
 	padding: 0 $spacer 2rem;
 
 	h2 {
@@ -82,43 +79,3 @@
 		max-width: 44rem;
 	}
 }
-
-.contest {
-	position: relative;
-	padding: 2rem 3rem;
-}
-.contest-1::before {
-	content: " ";
-	opacity: 0.5;
-	z-index: -1;
-	position: absolute;
-	width: 100%;
-	top: -2rem;
-	right: 0;
-	bottom: -2rem;
-	left: -2rem;
-	border-radius: 1.5rem;
-	filter: blur(40px);
-	background-image: radial-gradient(at 71% 77%, #f07 0, transparent 21%),
-		radial-gradient(at 99% 2%, #fff 0, transparent 0), radial-gradient(at 45% 98%, #7b26c9 0, transparent 51%),
-		radial-gradient(at 36% 47%, #ee9890 0, transparent 50%), radial-gradient(at 6% 21%, #f07 0, transparent 28%),
-		radial-gradient(at 45% 51%, #ff0080 0, transparent 53%), radial-gradient(at 73% 44%, #7d28cc 0, transparent 54%),
-		radial-gradient(at 24% 7%, #7d28cc 0, transparent 40%), radial-gradient(at 76% 46%, #6b66ff 0, transparent 50%);
-}
-/* .contest-2::before {
-	content: " ";
-	z-index: -1;
-	position: absolute;
-	width: 100%;
-	top: -2rem;
-	right: 0;
-	bottom: -2rem;
-	left: -2rem;
-	border-radius: 1.5rem;
-	filter: blur(40px);
-	background-image: radial-gradient(at 71% 77%, #fd7e14 0, transparent 21%),
-		radial-gradient(at 99% 2%, #fff 0, transparent 0), radial-gradient(at 45% 98%, #20c997 0, transparent 51%),
-		radial-gradient(at 36% 47%, #eebd90 0, transparent 50%), radial-gradient(at 6% 21%, #f0ad4e 0, transparent 28%),
-		radial-gradient(at 45% 51%, #fd7e14 0, transparent 53%), radial-gradient(at 73% 44%, #20c997 0, transparent 54%),
-		radial-gradient(at 24% 7%, #20c997 0, transparent 40%), radial-gradient(at 76% 46%, #5cb85c 0, transparent 50%);
-} */

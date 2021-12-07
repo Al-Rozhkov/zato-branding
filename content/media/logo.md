@@ -2,7 +2,7 @@
 title: Логотипы
 menuTitle: Логотипы
 description: 'Логотипы в векторном формате.'
-position: 9
+position: 7
 category: Готовые шаблоны
 image: head_media_logo.jpg
 ---
