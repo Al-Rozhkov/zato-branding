@@ -90,4 +90,16 @@ image: head_media_print.jpg
 
 ## Бейдж персональный
 
+<figure>
+  <nuxt-img src="/media/11_badge-vertical.jpg" preset="preview"></nuxt-img>
+</figure>
+
+<file-download><a href="/download/media/folder_220x305.ai">Скачать файл AI</a></file-download>
+
 ## Блокнот
+
+<figure>
+  <nuxt-img src="/media/12_notepad.jpg" preset="preview"></nuxt-img>
+</figure>
+
+<file-download><a href="/download/media/folder_220x305.ai">Скачать файл AI</a></file-download>

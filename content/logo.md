@@ -26,11 +26,11 @@ image: head_logo.jpg
 
 <div class="grid-12">
   <figure class="span-6">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/variant_wrong.jpg"></nuxt-img>
     <figcaption>Неверная компоновка логотипа и названия мероприятия</figcaption>
   </figure>
   <figure class="span-6">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/variant_correct.jpg"></nuxt-img>
     <figcaption>Корректная компоновка логотипа и названия мероприятия</figcaption>
   </figure>
 </div>
@@ -55,27 +55,27 @@ image: head_logo.jpg
 
 <div class="grid-12">
   <figure class="span-4">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/correct/correct_01.png"></nuxt-img>
     <figcaption>Полноцветную версию логотипа следует размещать на белом фоне или на белой плашке площадью не менее охранного поля логотипа.</figcaption>
   </figure>
   <figure class="span-4">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/correct/correct_02.png"></nuxt-img>
     <figcaption>При печати в одну краску следует использовать сплошную черную версию логотипа.</figcaption>
   </figure>
   <figure class="span-4">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/correct/correct_03.png"></nuxt-img>
     <figcaption>При черно-белой печати следует использовать черно-белую версию логотипа в градациях серого.</figcaption>
   </figure>
   <figure class="span-4">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/correct/correct_04.png"></nuxt-img>
     <figcaption>При размещении на неоднородном цветном фоне или фотографии следует использовать сплошную белую версию логотипа при соблюдении достаточного контраста фона с логотипом.</figcaption>
   </figure>
   <figure class="span-4">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/correct/correct_05.png"></nuxt-img>
     <figcaption>При размещении на однородном темном фоне следует использовать сплошную белую версию логотипа.</figcaption>
   </figure>
   <figure class="span-4">
-    <!-- <nuxt-img src="/correct_logo/correct_.png"></nuxt-img> -->
+    <nuxt-img src="/correct/correct_06.png"></nuxt-img>
     <figcaption>При печати в две краски (синяя и черная) допустимо печатать знак фирменным синим, а надпись черным или темно-серым цветом.</figcaption>
   </figure>
 </div>
