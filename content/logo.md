@@ -26,7 +26,7 @@ image: head_logo.jpg
 
 <div class="grid-12">
   <figure class="span-6">
-    <nuxt-img src="/variant_wrong.jpg"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/variant_wrong.jpg"></nuxt-img></div>
     <figcaption>Неверная компоновка логотипа и названия мероприятия</figcaption>
   </figure>
   <figure class="span-6">
@@ -44,10 +44,6 @@ image: head_logo.jpg
 </figure>
 
 Не рекомендуется располагать какие-либо текстовые или графические объекты внутри указанного поля.
-
-<!-- ```
-Иллюстрация "Запрещенное использование охранного поля"
-``` -->
 
 ## Логотип и фон
 
@@ -84,31 +80,31 @@ image: head_logo.jpg
 
 <div class="grid-12">
   <figure class="span-4">
-    <nuxt-img src="/wrong/wrong_01.png"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/wrong/wrong_01.png"></nuxt-img></div>
     <figcaption>Запрещается набирать надпись шрифтом отличным от фирменного. Всегда используйте только <nuxt-link to="/media/logo">готовый макет логотипа</nuxt-link>.</figcaption>
   </figure>
   <figure class="span-4">
-    <nuxt-img src="/wrong/wrong_03.png"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/wrong/wrong_03.png"></nuxt-img></div>
     <figcaption>Запрещается менять пропорции или иным образом деформировать логотип.</figcaption>
   </figure>
   <figure class="span-4">
-    <nuxt-img src="/wrong/wrong_02.png"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/wrong/wrong_02.png"></nuxt-img></div>
     <figcaption>Запрещается менять цвета знака, надписи или воспроизводить знак контуром. Всегда используйте соответствующий фону макет логотипа.</figcaption>
   </figure>
   <figure class="span-4">
-    <nuxt-img src="/wrong/wrong_04.png"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/wrong/wrong_04.png"></nuxt-img></div>
     <figcaption>Запрещается поворачивать и зеркально отражать логотип относительно основной плоскости макета.</figcaption>
   </figure>
   <figure class="span-4">
-    <nuxt-img src="/wrong/wrong_05.png"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/wrong/wrong_05.png"></nuxt-img></div>
     <figcaption>Запрещается размещать элементы внутри охранного поля логотипа.</figcaption>
   </figure>
   <figure class="span-4">
-    <nuxt-img src="/wrong/wrong_06.png"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/wrong/wrong_06.png"></nuxt-img></div>
     <figcaption>Нельзя использовать полноцветную версию логотипа на цветном, темном и неоднородном фоне.</figcaption>
   </figure>
   <figure class="span-4">
-    <nuxt-img src="/wrong/wrong_07.png"></nuxt-img>
+    <div class="example-bad"><nuxt-img src="/wrong/wrong_07.png"></nuxt-img></div>
     <figcaption>К логотипу и модулю логотипа запрещается применять эффекты: добавлять тени, свечения, накладывать текстуру, объем и т.д.</figcaption>
   </figure>
 </div>
