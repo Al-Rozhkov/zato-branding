@@ -62,6 +62,13 @@ export default {
     dir: 'assets/images',
     provider: 'static',
     presets: {
+      ill: {
+        modifiers: {
+          format: 'png',
+          fit: 'contain',
+          width: 800,
+        }
+      },
       preview: {
         modifiers: {
           format: 'jpg',
