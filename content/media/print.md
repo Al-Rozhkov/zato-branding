@@ -13,8 +13,16 @@ image: head_media_print.jpg
   <nuxt-img src="/media/1_blank.jpg" preset="preview"></nuxt-img>
 </figure>
 
-<file-download><a href="/download/media/paper.ai">Скачать файл шаблона MS Word</a></file-download>
-<file-download><a href="/download/media/paper.ai">Скачать файл AI</a></file-download>
+<file-download><a href="/download/media/blank.docx">Скачать файл шаблона MS Word</a></file-download>
+<file-download><a href="/download/media/blank.ai">Скачать файл AI</a></file-download>
+
+## Персональная визитная карточка
+
+<figure>
+  <nuxt-img src="/media/8_business_card.jpg" preset="preview"></nuxt-img>
+</figure>
+
+<file-download><a href="/download/media/business_card.ai">Скачать файл AI</a></file-download>
 
 ## Фирменный конверт A4
 
@@ -64,14 +72,6 @@ image: head_media_print.jpg
 
 <file-download><a href="/download/media/envelope_e65.ai">Скачать файл AI</a></file-download>
 
-## Персональная визитная карточка
-
-<figure>
-  <nuxt-img src="/media/8_business_card.jpg" preset="preview"></nuxt-img>
-</figure>
-
-<file-download><a href="/download/media/paper.ai">Скачать файл AI</a></file-download>
-
 ## Фирменный бланк
 
 <figure>
@@ -94,7 +94,8 @@ image: head_media_print.jpg
   <nuxt-img src="/media/11_badge-vertical.jpg" preset="preview"></nuxt-img>
 </figure>
 
-<file-download><a href="/download/media/folder_220x305.ai">Скачать файл AI</a></file-download>
+<file-download><a href="/download/media/badge_small.ai">Бейдж 60 на 90 мм. Скачать файл AI</a></file-download>
+<file-download><a href="/download/media/badge_big.ai">Бейдж 90 на 120 мм. Скачать файл AI</a></file-download>
 
 ## Блокнот
 
@@ -102,4 +103,5 @@ image: head_media_print.jpg
   <nuxt-img src="/media/12_notepad.jpg" preset="preview"></nuxt-img>
 </figure>
 
-<file-download><a href="/download/media/folder_220x305.ai">Скачать файл AI</a></file-download>
+<file-download><a href="/download/media/folder_220x305.ai">Обложка. Скачать файл AI</a></file-download>
+<file-download><a href="/download/media/folder_220x305.ai">Страница. Скачать файл AI</a></file-download>
