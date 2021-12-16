@@ -15,9 +15,9 @@ category: Готовые шаблоны
 
 ## Информационная стойка «Карта»
 
-<!-- <figure>
+<figure>
   <nuxt-img src="/media/14_reception_map.png" preset="ill"></nuxt-img>
-</figure> -->
+</figure>
 
 <file-download><a href="/download/media_interior/reception_2.ai">Скачать макет в формате AI</a></file-download>
 

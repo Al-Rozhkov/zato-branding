@@ -29,6 +29,8 @@ category: Готовые шаблоны
 
 ## Кружка
 
-<!-- <figure>
-  <nuxt-img src="/media/25_mug.png" preset="ill"></nuxt-img>
-</figure> -->
+<figure>
+  <nuxt-img src="/media/25_mug.jpg" width="800"></nuxt-img>
+</figure>
+
+<file-download><a href="/download/media_things/mug.ai">Скачать макет в формате AI</a></file-download>
