@@ -11,10 +11,12 @@ category: Готовые шаблоны
   <nuxt-img src="/media/22_bag.jpg" width="800"></nuxt-img>
 </figure>
 
+<!-- <file-download><a href="/download/media_things/planner.ai">Скачать макет в формате AI</a></file-download> -->
+
 ## Ежедневник
 
 <figure>
-  <nuxt-img src="/media/23_planner.png" preset="ill"></nuxt-img>
+  <nuxt-img src="/media/23_planner.jpg" preset="ill"></nuxt-img>
 </figure>
 
 <file-download><a href="/download/media_things/planner.ai">Скачать макет в формате AI</a></file-download>
