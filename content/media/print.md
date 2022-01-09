@@ -13,7 +13,8 @@ image: head_media_print.jpg
   <nuxt-img src="/media/1_blank.jpg" preset="preview"></nuxt-img>
 </figure>
 
-<file-download><a href="/download/media/blank.docx">Скачать файл шаблона MS Word</a></file-download>
+<file-download><a href="/download/media/blank.dotx">Скачать файл шаблона письма MS Word</a></file-download>
+<file-download><a href="/download/media/protocol.dotx">Скачать файл шаблона протокола MS Word</a></file-download>
 <file-download><a href="/download/media/blank.ai">Скачать файл AI</a></file-download>
 
 ## Персональная визитная карточка
