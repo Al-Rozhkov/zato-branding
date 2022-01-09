@@ -11,4 +11,4 @@ category: Руководство по использованию фирменн�
   <nuxt-img src="/15-anniversary-logo.png"></nuxt-img>
 </figure>
 
-<file-download><a href="/download/media/logo_circle.pdf">Скачать логотип 15-летия Ассоциации ЗАТО атомной промышленности PDF</a></file-download>
+<file-download><a href="/download/media/logo_circle.pdf" target="_blank">Скачать логотип 15-летия Ассоциации ЗАТО атомной промышленности PDF</a></file-download>

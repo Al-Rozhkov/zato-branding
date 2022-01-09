@@ -24,7 +24,7 @@ category: Руководство по использованию фирменн�
 
 Гарнитура Raleway является частью проекта [Google Fonts](https://fonts.google.com/) и выпускается под лицензией SIL OPEN FONT LICENSE, что позволяет использовать шрифт без ограничений.
 
-<file-download><a href="/download/media/logo_circle.pdf">Скачать шрифт Rosatom</a></file-download>
+<file-download><a href="/download/font.zip" target="_blank">Скачать шрифт Rosatom</a></file-download>
 
 ## Фирменные цвета
 
